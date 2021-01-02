@@ -1,7 +1,7 @@
 {
   "short_name": "Portfolio app",
   "name": "Portfolio app made with react as part of 'weekend projects' initiative",
-  "homepage":"https://sandy5444.github.io/TestRepo",
+  "homepage":"http://sandy5444.github.io/TestRepo",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,6 +9,14 @@
       "type": "image/x-icon"
     }
   ],
+  "scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -r https://github.com/sandy5444/TestRepo",
+		"test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
